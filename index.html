@@ -5,6 +5,7 @@
     <title>Live Agent</title>
 	
 	
+	
 	<style type='text/css'>
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			background-color: #005290;
@@ -14,11 +15,14 @@
 			outline: 1px solid #005290;
 		}
 	</style>
-	
+
 	
 </head>
 <body>
  
+	
+	
+
 	<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 	<script type='text/javascript'>
 		var initESW = function(gslbBaseURL) {
@@ -45,17 +49,17 @@
 
 			embedded_svc.init(
 				'https://quiena--xappia1.my.salesforce.com',
-				'https://xappia1-chats-quiena.cs198.force.com/liveAgentSetupFlow',
+				'https://xappia1-pruebaquiena.cs198.force.com/SkillsChat',
 				gslbBaseURL,
 				'00D050000008kNz',
-				'SkillsChat',
+				'Agentes_por_habilidades2',
 				{
 					baseLiveAgentContentURL: 'https://c.la2-c1cs-ia4.salesforceliveagent.com/content',
 					deploymentId: '57246000000LM0E',
-					buttonId: '57305000000Kyjp',
+					buttonId: '57305000000Kyju',
 					baseLiveAgentURL: 'https://d.la2-c1cs-ia4.salesforceliveagent.com/chat',
-					eswLiveAgentDevName: 'SkillsChat',
-					isOfflineSupportEnabled: false
+					eswLiveAgentDevName: 'Agentes_por_habilidades2',
+					isOfflineSupportEnabled: true
 				}
 			);
 		};
@@ -71,6 +75,9 @@
 			initESW('https://service.force.com');
 		}
 	</script>
+	
+	
+	
     
 	
 </body>
